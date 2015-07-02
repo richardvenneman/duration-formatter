@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'ruby-duration', '~> 3.2'
 
+  s.add_development_dependency 'rake', '~> 10.4'
   s.add_development_dependency 'guard', '~> 2.12'
   s.add_development_dependency 'guard-minitest', '~> 2.4'
   s.add_development_dependency 'rb-fsevent', '~> 0.9'
