@@ -2,6 +2,8 @@
 
 A simple gem to parse minutes into a readable format using [ruby-duration](https://github.com/peleteiro/ruby-duration).
 
+[![Gem Version](https://badge.fury.io/rb/duration-formatter.svg)](http://badge.fury.io/rb/duration-formatter) [![Code Climate](https://codeclimate.com/github/richardvenneman/duration-formatter/badges/gpa.svg)](https://codeclimate.com/github/richardvenneman/duration-formatter) [![Dependency Status](https://gemnasium.com/richardvenneman/duration-formatter.svg)](https://gemnasium.com/richardvenneman/duration-formatter) [![Build Status](http://img.shields.io/travis/richardvenneman/duration-formatter.svg)](https://travis-ci.org/richardvenneman/duration-formatter)
+
 ## Installation
 
 Add it to your Gemfile with:
