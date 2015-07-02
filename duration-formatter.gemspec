@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
 
   s.license     = 'MIT'
 
-  s.files       = ['lib/**/*']
+  s.files       = `git ls-files`.split("\n")
   s.test_files  = Dir['test/**/*']
 
-  s.add_dependency 'ruby-duration', '>= 3.2'
+  s.add_dependency 'ruby-duration', '~> 3.2'
 
   s.add_development_dependency 'guard', '~> 2.12'
   s.add_development_dependency 'guard-minitest', '~> 2.4'
