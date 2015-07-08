@@ -35,7 +35,7 @@ FormattedDuration.new(241).format # => 4 hours, 1 minute
 
 You can also force a constraint upon the format.
 
-```
+```ruby
 FormattedDuration.new(11520, :days).format # => 15 days (not "2 weeks, 1 day")
 FormattedDuration.new(1440, :hours).format # => 24 hours
 FormattedDuration.new(80, :minutes).format # => 80 minutes
