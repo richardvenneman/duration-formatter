@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class FormattedDurationTest < Minitest::Test
+
+  # Full units
+
   def test_weeks_only_duration
     text = '1 week'
     output = FormattedDuration.new(10080).format
@@ -29,6 +32,8 @@ class FormattedDurationTest < Minitest::Test
     assert_equal text, output
   end
 
+  # Composition
+
   def test_weeks_and_days_duration
     text = '1 week, 4 days'
     output = FormattedDuration.new(15840).format
@@ -46,6 +51,29 @@ class FormattedDurationTest < Minitest::Test
   def test_hours_and_minutes_duration
     text = '1 hour, 30 minutes'
     output = FormattedDuration.new(90).format
+
+    assert_equal text, output
+  end
+
+  # Constraints
+
+  def test_days_constraint
+    text = '7 days'
+    output = FormattedDuration.new(10080, :days).format
+
+    assert_equal text, output
+  end
+
+  def test_hours_constraint
+    text = '24 hours'
+    output = FormattedDuration.new(1440, :hours).format
+
+    assert_equal text, output
+  end
+
+  def test_minutes_constraint
+    text = '60 minutes'
+    output = FormattedDuration.new(60, :minutes).format
 
     assert_equal text, output
   end
