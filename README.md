@@ -19,12 +19,14 @@ Run the `bundle install` in your terminal command to install it.
 The gem exposes a class `FormattedDuration` which takes the passed minutes to determine the format. Calling `format` on the instance  returns the formatted duration. Examples:
 
 ```ruby
-# Full days, hours and minutes
+# Full units
+FormattedDuration.new(10080).format # => 1 week
 FormattedDuration.new(1440).format # => 1 day
 FormattedDuration.new(240).format # => 4 hours
 FormattedDuration.new(20).format # => 20 minutes
 
 # Composition
+FormattedDuration.new(15840).format # => 1 week, 4 days
 FormattedDuration.new(1450).format # => 1 day, 10 minutes
 FormattedDuration.new(241).format # => 4 hours, 1 minute
 ```

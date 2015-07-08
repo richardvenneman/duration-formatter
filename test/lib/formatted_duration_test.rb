@@ -1,6 +1,13 @@
 require 'test_helper'
 
 class FormattedDurationTest < Minitest::Test
+  def test_weeks_only_duration
+    text = '1 week'
+    output = FormattedDuration.new(10080).format
+
+    assert_equal text, output
+  end
+
   def test_days_only_duration
     text = '1 day'
     output = FormattedDuration.new(1440).format
@@ -18,6 +25,13 @@ class FormattedDurationTest < Minitest::Test
   def test_minutes_only_duration
     text = '30 minutes'
     output = FormattedDuration.new(30).format
+
+    assert_equal text, output
+  end
+
+  def test_weeks_and_days_duration
+    text = '1 week, 4 days'
+    output = FormattedDuration.new(15840).format
 
     assert_equal text, output
   end
