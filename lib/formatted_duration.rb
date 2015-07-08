@@ -22,22 +22,22 @@ class FormattedDuration
       output << Duration.new(weeks: @weeks).format('%w %~w')
     end
 
-    if weekless_days != 0 && @constraint > 1
-      output << Duration.new(days: weekless_days).format('%d %~d')
-    elsif @days > 0 && @constraint == 2
+    if @days > 0 && @constraint == 2
       output << Duration.new(days: @days).format('%tdu')
+    elsif weekless_days != 0 && @constraint > 1
+      output << Duration.new(days: weekless_days).format('%d %~d')
     end
 
-    if dayless_hours != 0 && @constraint > 0
-      output << Duration.new(hours: dayless_hours).format('%h %~h')
-    elsif @hours > 0 && @constraint == 1
+    if @hours > 0 && @constraint == 1
       output << Duration.new(hours: @hours).format('%thu')
+    elsif dayless_hours != 0 && @constraint > 0
+      output << Duration.new(hours: dayless_hours).format('%h %~h')
     end
 
-    if hourless_minutes != 0
-      output << Duration.new(minutes: hourless_minutes).format('%m %~m')
-    elsif @minutes > 0 && @constraint == 0
+    if @minutes > 0 && @constraint == 0
       output << Duration.new(minutes: @minutes).format('%tmu')
+    elsif hourless_minutes != 0
+      output << Duration.new(minutes: hourless_minutes).format('%m %~m')
     end
 
     output.join(', ')

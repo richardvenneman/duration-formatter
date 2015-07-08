@@ -58,8 +58,8 @@ class FormattedDurationTest < Minitest::Test
   # Constraints
 
   def test_days_constraint
-    text = '7 days'
-    output = FormattedDuration.new(10080, :days).format
+    text = '8 days'
+    output = FormattedDuration.new(11520, :days).format
 
     assert_equal text, output
   end
@@ -72,8 +72,8 @@ class FormattedDurationTest < Minitest::Test
   end
 
   def test_minutes_constraint
-    text = '60 minutes'
-    output = FormattedDuration.new(60, :minutes).format
+    text = '80 minutes'
+    output = FormattedDuration.new(80, :minutes).format
 
     assert_equal text, output
   end

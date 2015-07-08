@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    duration-formatter (1.0.0)
+    duration-formatter (1.0.1)
       ruby-duration (~> 3.2)
 
 GEM
