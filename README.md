@@ -40,20 +40,3 @@ FormattedDuration.new(11520, :days).format # => 15 days (not "2 weeks, 1 day")
 FormattedDuration.new(1440, :hours).format # => 24 hours
 FormattedDuration.new(80, :minutes).format # => 80 minutes
 ```
-
-## TODO
-
-This gem is a work-in-progress. Planned features:
-
-1. Seconds support
-2. Support “half” units, e.g. 90 minutes becomes 1½ hours
-
-## Contributing
-
-Everyone is encouraged to help improve this project. Here are a few ways you can help:
-
-- Report bugs
-- Fix bugs and submit pull requests
-- Write, clarify, or fix documentation
-- Suggest or add new features
-- Write missing tests
