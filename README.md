@@ -41,6 +41,6 @@ FormattedDuration.new(1440, :hours).format # => 24 hours
 FormattedDuration.new(80, :minutes).format # => 80 minutes
 ```
 
-### License
+## License
 
 This library is released under the [MIT License](http://www.opensource.org/licenses/MIT).
