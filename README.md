@@ -40,3 +40,7 @@ FormattedDuration.new(11520, :days).format # => 15 days (not "2 weeks, 1 day")
 FormattedDuration.new(1440, :hours).format # => 24 hours
 FormattedDuration.new(80, :minutes).format # => 80 minutes
 ```
+
+### License
+
+This library is released under the [MIT License](http://www.opensource.org/licenses/MIT).
