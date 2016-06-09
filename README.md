@@ -18,7 +18,7 @@ Add it to your Gemfile with:
 gem 'duration-formatter'
 ```
 
-Run the `bundle install` in your terminal command to install it.
+Run the `bundle install` command in your terminal to install it.
 
 ## Usage
 
