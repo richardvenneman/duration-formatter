@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.description = 'A simple gem to parse minutes into a readable format using
                    ruby-duration.'
 
-  s.files       = `git ls-files`.split('\n')
+  s.files       = `git ls-files`.split("\n")
   s.test_files  = Dir['test/**/*']
 
   s.add_dependency 'ruby-duration', '~> 3.2'
