@@ -6,7 +6,7 @@ class FormattedDurationTest < Minitest::Test
 
   def test_weeks_only_duration
     text = '1 week'
-    output = FormattedDuration.new(10080).format
+    output = FormattedDuration.new(100_80).format
 
     assert_equal text, output
   end
@@ -36,7 +36,7 @@ class FormattedDurationTest < Minitest::Test
 
   def test_weeks_and_days_duration
     text = '1 week, 4 days'
-    output = FormattedDuration.new(15840).format
+    output = FormattedDuration.new(158_40).format
 
     assert_equal text, output
   end
@@ -59,7 +59,7 @@ class FormattedDurationTest < Minitest::Test
 
   def test_days_constraint
     text = '8 days'
-    output = FormattedDuration.new(11520, :days).format
+    output = FormattedDuration.new(115_20, :days).format
 
     assert_equal text, output
   end
