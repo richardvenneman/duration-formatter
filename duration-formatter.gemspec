@@ -3,7 +3,8 @@ require './lib/duration_formatter/version'
 Gem::Specification.new do |s|
   s.name        = 'duration-formatter'
   s.version     = DurationFormatter::VERSION
-  s.authors     = ["Richard Venneman"]
+  s.license     = 'MIT'
+  s.authors     = ['Richard Venneman']
   s.email       = 'richardvenneman@me.com'
   s.homepage    =
     'https://github.com/richardvenneman/duration-formatter'
@@ -11,9 +12,7 @@ Gem::Specification.new do |s|
   s.description = 'A simple gem to parse minutes into a readable format using
                    ruby-duration.'
 
-  s.license     = 'MIT'
-
-  s.files       = `git ls-files`.split("\n")
+  s.files       = `git ls-files`.split('\n')
   s.test_files  = Dir['test/**/*']
 
   s.add_dependency 'ruby-duration', '~> 3.2'
