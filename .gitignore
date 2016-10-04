@@ -1,2 +1,5 @@
+.ruby-version
 coverage
 tmp
+Gemfile.lock
+
